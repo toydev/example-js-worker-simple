@@ -10,5 +10,5 @@ if (window.Worker) {
         result.innerHTML += `<li>Worker からメッセージを受信しました。: ${e.data}</li>`;
     }
 } else {
-    result.innerHTML += '<li>SharedWorker は未サポートです。</li>';
+    result.innerHTML += '<li>Worker は未サポートです。</li>';
 }
