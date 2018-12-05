@@ -2,6 +2,7 @@ const path = require('path')
 const webpack = require('webpack')
 
 module.exports = {
+  mode: 'development',
   entry: {
     "js/bundle": './app/main/js/site.js',
     "js/worker": './app/main/js/worker.js',
@@ -20,7 +21,7 @@ module.exports = {
           {
             loader: 'babel-loader',
             options: {
-              presets: ['env']
+              presets: ['@babel/preset-env']
             }
           }
         ]
