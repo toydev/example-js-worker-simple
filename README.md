@@ -29,10 +29,22 @@ Web Worker を使用することでマルチスレッドを自在に扱えるよ
 
 まずは以下のコマンドで必要なパッケージをインストールします。
 
-    npm install
+    > npm install
 
 次に以下のコマンドでコンパイルします。
 
-    npm run build
+    > npm run build
 
-コンパイルが正常に終わったら index.html をブラウザで開いてください。
+コンパイルが正常に終わったら以下のコマンドで Web サーバを起動します。
+Web Worker を動かすには Web サーバ上のリソースとしてアクセスする必要があるためです。
+file:/// のアクセスでは動く保証がありません。
+
+    > npx http-server
+    Starting up http-server, serving ./
+    Available on:
+      http://192.168.10.5:8080
+      http://192.168.33.1:8080
+      http://127.0.0.1:8080
+    Hit CTRL-C to stop the server
+
+ブラウザでアクセスしてください。
