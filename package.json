@@ -1,21 +1,23 @@
 {
   "name": "example-js-worker-simple",
   "version": "1.0.0",
+  "private": true,
   "description": "",
   "main": "site.js",
   "scripts": {
-    "build": "webpack --watch --progress"
+    "dev": "webpack --watch --progress --mode development",
+    "build": "webpack --progress --mode production"
   },
   "keywords": [],
   "author": "toydev",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.8.4",
-    "@babel/preset-env": "^7.8.4",
-    "babel-loader": "^8.0.6",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel-loader": "^8.1.0",
     "babel-polyfill": "^6.26.0",
-    "http-server": "^0.12.1",
-    "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10"
+    "http-server": "^0.12.3",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
   }
 }
